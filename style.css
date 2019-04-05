@@ -338,6 +338,7 @@ input[type="search"] {
         text-transform: uppercase;
         span {
             font-family: 'Roboto Condensed', sans-serif;
+            color: #000;
         }
         #newsletter_margin {
             margin: 30px 0;
