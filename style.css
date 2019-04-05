@@ -770,7 +770,7 @@ input[type="search"] {
     background: $primary;
     font-size: 0.75rem;
     line-height: normal;
-    color: #FFF;
+    color: #000;
     text-align: center;
     text-transform: uppercase;
     &:before {
