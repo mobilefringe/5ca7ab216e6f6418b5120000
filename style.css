@@ -313,7 +313,7 @@ input[type="search"] {
                 }
             	&:hover, &:active, &:focus, &:visited {
             	    background: $primary;
-            	    color: #d8be9f;
+            	    color: $secondary;
             	}
             }
         }
