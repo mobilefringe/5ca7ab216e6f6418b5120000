@@ -113,7 +113,7 @@
             },
             created (){
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Events Banner').images;
+                    // var temp_repo = this.findRepoByName('Events Banner').images;
                     // if(temp_repo != null) {
                     //     this.pageBanner = temp_repo[0];
                     // } else {
@@ -122,11 +122,11 @@
                     //     }
                     // }
 
-                    // if (_.isEmpty(this.eventList)) {
-                    //     this.toggleEvents = false;
-                    //     this.togglePromos = true;
-                    //     this.handleButton();
-                    // }
+                    if (_.isEmpty(this.eventList)) {
+                        this.toggleEvents = false;
+                        this.togglePromos = true;
+                        this.handleButton();
+                    }
                     
                     this.dataLoaded = true;
                 });
