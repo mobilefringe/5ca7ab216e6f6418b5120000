@@ -309,7 +309,7 @@ input[type="search"] {
                 line-height: normal;
                 color: #FFF;
                 a:hover {
-                    color: #d8be9f;
+                    color: $primary;
                 }
             	&:hover, &:active, &:focus, &:visited {
             	    background: $primary;
