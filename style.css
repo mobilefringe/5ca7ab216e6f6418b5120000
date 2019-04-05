@@ -755,9 +755,6 @@ input[type="search"] {
             .router-link-exact-active {
                 color: #000;
             }
-            .router-link-active {
-                color: #195573;
-            }
         }
     }
 }
