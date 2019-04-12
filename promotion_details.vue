@@ -85,7 +85,7 @@
         //                 this.pageBanner = temp_repo[0];
         //             } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995355000/picorivera_banner.png"
                         }
         //             }
                     
@@ -100,7 +100,7 @@
                             }
                         } else {
                             if  (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                                this.currentPromo.image_url = "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624484143/creekside_placeholder.png";    
+                                this.currentPromo.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995470000/picorivera_default.png";    
                             }
                         }
 					}
