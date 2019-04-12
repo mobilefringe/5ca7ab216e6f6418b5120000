@@ -71,9 +71,9 @@
                     // if(temp_repo != null) {
                     //     this.pageBanner = temp_repo[0];
                     // } else {
-                    //     this.pageBanner = {
-                    //         "image_url": "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624485505/creekside_banner.png"
-                    //     }
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624485505/creekside_banner.png"
+                        }
                     // }
                     this.dataLoaded = true;
                 });
