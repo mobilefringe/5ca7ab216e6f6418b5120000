@@ -254,7 +254,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624484143/creekside_placeholder.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995470000/picorivera_default.png";
                             }
                             // Sort Featured Events
                             if (value.is_featured) {
