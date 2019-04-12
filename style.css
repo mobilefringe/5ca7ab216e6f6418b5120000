@@ -806,6 +806,9 @@ input[type="search"] {
     background-color: $secondary;
     font-weight: 700;
     color: #000;
+    &:hover {
+        color: black;
+    }
 }
 .list-item {
     display: inline-block;
