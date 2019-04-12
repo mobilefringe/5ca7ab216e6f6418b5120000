@@ -510,7 +510,7 @@ input[type="search"] {
                 border: 1px solid #fff;
                 background: $secondary;
                 font-size: 0.9rem;
-                color: #fff;    
+                color: #000;    
                 text-transform: uppercase;
                 transition: all 0.3s ease;
                 &:hover {
