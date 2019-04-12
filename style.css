@@ -248,11 +248,11 @@ input[type="search"] {
 
 /* *** HEADER *** */
 #header {
-    padding: 25px 0 0 0;
+    padding: 24px 0 0 0;
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
     .site_logo {
-        padding-bottom: 17px;
-        max-width: 250px;
+        padding-bottom: 33px;
+        max-width: 320px;
         transition: all 0.3s ease;
         img {
             max-width: 100%;
