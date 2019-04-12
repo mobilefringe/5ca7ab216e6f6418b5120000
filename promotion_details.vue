@@ -84,9 +84,9 @@
         //             if(temp_repo != null) {
         //                 this.pageBanner = temp_repo[0];
         //             } else {
-        //                 this.pageBanner = {
-        //                     "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
-        //                 }
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
+                        }
         //             }
                     
 					this.currentPromo = this.findPromoBySlug(this.id);
