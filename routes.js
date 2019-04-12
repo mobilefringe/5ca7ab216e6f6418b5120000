@@ -122,7 +122,7 @@ define([], function () {
             children: [
                 {
                     path: '',
-                    component: view('events'),
+                    component: view('events_and_promotions'),
                     name: 'events'
                 },
                 {
@@ -136,29 +136,29 @@ define([], function () {
                 }
             ]
         },
-         {
-                    path: '/promotions',
-                    component: view('default'),
-                    meta: {
-                        breadcrumb: 'Sales & Promotions',
-                    },
-                    children: [
-                        {
-                            path: '',
-                            component: view('promotions'),
-                            name: 'promotions'
-                        },
-                        {
-                            path: ':id',
-                            component: view('promotion_details'),
-                            meta: {
-                                breadcrumb: 'Promotion Details',
-                            },
-                            name: 'promotionDetails',
-                            props: true
-                        }
-                    ]
+        {
+            path: '/promotions',
+            component: view('default'),
+            meta: {
+                breadcrumb: 'Sales & Promotions',
+            },
+            children: [
+                {
+                    path: '',
+                    component: view('promotions'),
+                    name: 'promotions'
                 },
+                {
+                    path: ':id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
+                    props: true
+                }
+            ]
+        },
         {
             path: '/events-and-promotions',
             component: view('default'),
