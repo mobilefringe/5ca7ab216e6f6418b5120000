@@ -807,7 +807,7 @@ input[type="search"] {
     font-weight: 700;
     color: #000;
     &:hover {
-        color: black;
+        color: #000;
     }
 }
 .list-item {
