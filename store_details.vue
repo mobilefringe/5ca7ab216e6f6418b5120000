@@ -150,11 +150,10 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner');
-                    if(temp_repo !== null && temp_repo !== undefined) {
+                    if (temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995355000/picorivera_banner.png"
                         }
@@ -208,7 +207,13 @@
             methods: {
                 loadData: async function () {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "stores"), this.$store.dispatch("getData","events"), this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData","coupons"), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "stores"), 
+                            this.$store.dispatch("getData","events"), 
+                            this.$store.dispatch("getData","promotions"), 
+                            this.$store.dispatch("getData","coupons"), 
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
