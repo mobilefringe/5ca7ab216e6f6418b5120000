@@ -125,11 +125,13 @@
                     }
                 },
                 windowWidth: function() {
+                    console.log("(this.windowWidth", (this.windowWidth)
                     if (this.windowWidth <= 1024 && this.windowWidth >= 768) {
                         this.isTablet = true;
                     } else {
                         this.isTablet = false;
                     }
+                    console.log("this.isTablet", this.isTablet)
                 }
             },
             created() {
