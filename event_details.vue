@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ background: 'linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #000 url(' + pageBanner.image_url + ') center center' }">
                     <div class="main_container position_relative">
-                        <h2>Events</h2>
+                        <h2>Events & Promotions</h2>
                     </div>
                 </div>
                 <div class="main_container">
@@ -22,9 +22,6 @@
                                     <span v-if="isMultiDay(currentEvent)">{{ currentEvent.start_date | moment("MMMM D", timezone)}} - {{ currentEvent.end_date | moment("MMMM D", timezone)}}</span>
                                     <span v-else>{{ currentEvent.start_date | moment("MMMM D", timezone)}}</span>
                                 </p>
-                                <!--<p class="event_details_dates">-->
-                                <!--    Location-->
-                                <!--</p>-->
                                 <div class="event_desc event_details" v-html="currentEvent.rich_description"></div>
                             </div>
                             <div class="col-md-4">
@@ -37,9 +34,9 @@
                             <div class="col-md-12">
                                 <div class="row margin_30">
                                     <div class="col-md-12">
-                                        <router-link to="/events">
-                    		                <div class="animated_btn pull-left">Back to Events</div>    
-                    		            </router-link>    
+                                        <router-link to="/events-and-promotions">
+                    		                <div class="animated_btn pull-left">Back to Events & Promotions</div>    
+                    		            </router-link>   
                                     </div>
                                 </div>
                                 <social-sharing v-if="currentEvent" :url="shareURL(currentEvent.slug)" :title="currentEvent.name" :description="currentEvent.description" :quote="truncate(currentEvent.description)" :twitter-user="siteInfo.twitterHandle" :media="currentEvent.image_url" inline-template>
