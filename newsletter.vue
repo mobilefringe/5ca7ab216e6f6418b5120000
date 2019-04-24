@@ -13,21 +13,21 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/urall/" method="post">
+                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/uliklt/" method="post">
                                 <div class="row">
                                     <div class="col-sm-6" >
-                                        <label for="fieldgvuhk" class="accessibility">First Name</label>
-                                        <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldgvuhk" name="cm-f-gvuhk" type="text" placeholder="First Name">
+                                        <label for="fielddjdylh" class="accessibility">First Name</label>
+                                        <input v-model="form_data.first_name" required class="margin_20 form-control" id="fielddjdylh" name="cm-f-djdylk" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
-                                        <label for="fieldgvuhu" class="accessibility">Last Name</label>
-                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldgvuhu" name="cm-f-gvuhu" type="text" placeholder="Last Name">
+                                        <label for="fielddjdylk" class="accessibility">Last Name</label>
+                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fielddjdylk" name="cm-f-gvuhu" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <label for="newsletter_email" class="accessibility">Email</label>
-                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-urall-urall" type="email" placeholder="Email" id="newsletter_email">
+                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-uliklt-uliklt" type="email" placeholder="Email" id="newsletter_email">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -46,16 +46,6 @@
                                         <button class="animated_btn" type="submit" :disabled="formSuccess">Subscribe</button>
                                     </div>
                                 </div>
-                                <!--<div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
-                                <!--    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
-                                <!--    <span class="sr-only">{{$t("newsletter_page.success")}} : </span>-->
-                                <!--    Thank you! Your subscription has been confirmed.-->
-                                <!--</div>-->
-                                <!--<div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
-                                <!--    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
-                                <!--    <span class="sr-only">{{$t("newsletter_page.error")}} : </span>-->
-                                <!--    There was an error when trying to submit your request. Please try again later.-->
-                                <!--</div>-->
                             </form> 
                         </div>
                     </div>
@@ -97,7 +87,7 @@
             created() {
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Newsletter Banner');
-                    if(temp_repo != null && temp_repo != undefined) {
+                    if (temp_repo != null && temp_repo != undefined) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
                         this.pageBanner = {
@@ -105,9 +95,9 @@
                         }
                     }
                     
-                   if(response){
+                    if (response) {
                         this.pageContent = response[0].data;
-                   }
+                    }
                     this.dataLoaded = true;
                 });
             },
@@ -121,7 +111,9 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/"+site.subdomain+"-newsletter.json"})]);
+                        let results = await Promise.all([
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + site.subdomain + "-newsletter.json" })
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
@@ -132,11 +124,10 @@
                         if (result) {
                             let errors = this.errors;
                             
-                            if(errors.length > 0) {
+                            if (errors.length > 0) {
                                 console.log("Error");
                                 this.formError = true;
-                            }
-                            else {
+                            } else {
                                 form.preventDefault();
                                 console.log("No Error", form);
                                 var vm = this;
