@@ -720,6 +720,14 @@ input[type="search"] {
     text-transform: uppercase;
     color: $primary;    
 }
+.page_body {
+    h2 {
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $primary;
+    }
+}
 .page-breadcrumb {
     margin-bottom: 60px;
     font-size: 0.8rem;
