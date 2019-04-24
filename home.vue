@@ -32,7 +32,7 @@
                     </slick>
                     <div class="next"></div>
                 </div>
-                <!--<messages-component></messages-component>-->
+                <messages-component></messages-component>
                 <div class="main_container">
                     <h2 class="home_title center">Events & Promotions</h2>
                     <div class="row margin_40 home_events">
