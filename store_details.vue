@@ -17,7 +17,6 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="sidebar">
-                                <!--<img class="store_details_image center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />-->
                                 <div v-if="currentStore.no_logo" class="store_details_no_logo center-block">
                                     <div class="no_logo">
                                         <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" :alt="currentStore.name">
@@ -49,7 +48,7 @@
                         </div>
                         <div class="col-md-8">
                             <div id="map" class="margin_20">
-                                <mapplic-png-map ref="pngmap_ref" :height="314" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" @updateMap="updatePNGMap"></mapplic-png-map>
+                                <mapplic-png-map id="store_details" ref="pngmap_ref" :height="314" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" @updateMap="updatePNGMap"></mapplic-png-map>
                             </div>
                             <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
                             <div v-if="currentStore.events">
