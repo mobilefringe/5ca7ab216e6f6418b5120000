@@ -25,8 +25,6 @@
                             <div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    
                         </div>
                         <div class="col-md-8">
-                            <!--<h2 class="contact-header">Contact Form</h2>-->
-                            <p></p>
                             <transition name="fadeIn">
                                 <div>
                                     <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
@@ -86,14 +84,7 @@
         </transition>
     </div>
 </template>
-<style>
-    #contact_us_container h2{
-        font-size: 16px;
-        line-height: 1.5rem;
-        margin:auto;
-        color: #195573;
-    }
-</style>
+
 <script>
     define(["Vue", "vuex", "vue-meta", "vee-validate", "json!site.json"], function (Vue, Vuex, Meta, VeeValidate, Site) {
         Vue.use(Meta);
