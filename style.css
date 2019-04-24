@@ -795,7 +795,7 @@ input[type="search"] {
     }
 }
 .animated_btn:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     &:before {
         -webkit-transform: scale3d(9, 9, 1);
