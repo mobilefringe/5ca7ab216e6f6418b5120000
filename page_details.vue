@@ -40,15 +40,14 @@
             created() {
                 this.updateCurrentPage(this.id);
                 var temp_repo = this.findRepoByName('Pages Banner');
-                    if(temp_repo !== null && temp_repo !== undefined) {
-                       temp_repo = temp_repo.images;
-                       this.pageBanner = temp_repo[0];
+                if (temp_repo !== null && temp_repo !== undefined) {
+                   temp_repo = temp_repo.images;
+                   this.pageBanner = temp_repo[0];
+                } else {
+                    this.pageBanner = {
+                        "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995355000/picorivera_banner.png"
                     }
-                    else {
-                        this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995355000/picorivera_banner.png"
-                        }
-                    }
+                }
             },
             watch: {
                 $route: function () {
