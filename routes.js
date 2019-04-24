@@ -30,45 +30,7 @@ define([], function () {
                         }
                     ]
                 },
-                // {
-                //     path: '/coupons',
-                //     component: view('default'),
-                //     meta: {
-                //         breadcrumb: 'Coupons',
-                //     },
-                //     children: [
-                //         {
-                //             path: '',
-                //             component: view('coupons'),
-                            
-                //             name: 'coupons'
-                //         },
-                //         {
-                //             path: '/coupons/my-basket',
-                //             component: view('default'),
-                //             children: [
-                //                 {
-                //                     path: '',
-                //                     component: view('coupon_basket'),
-                //                     meta: {
-                //                         breadcrumb: 'My Basket',
-                //                     },
-                //                     name: 'couponBasket',
-                //                     props: true
-                //                 }
-                //             ]
-                //         },
-                //         {
-                //             path: ':id',
-                //             component: view('coupons_details'),
-                //             meta: {
-                //                 breadcrumb: 'Coupon Details',
-                //             },
-                //             name: 'couponDetails',
-                //             props: true
-                //         }
-                //     ]
-                // },
+                
                 {
                     path: '/leasing',
                     component: view('default'),
@@ -114,52 +76,6 @@ define([], function () {
             ]
         },
         {
-            path: '/events',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Events',
-            },
-            children: [
-                {
-                    path: '',
-                    component: view('events_and_promotions'),
-                    name: 'Events & Promotions'
-                },
-                {
-                    path: ':id',
-                    component: view('event_details'),
-                    meta: {
-                        breadcrumb: 'Event Details',
-                    },
-                    name: 'eventDetails',
-                    props: true
-                }
-            ]
-        },
-        {
-            path: '/promotions',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Sales & Promotions',
-            },
-            children: [
-                {
-                    path: '',
-                    component: view('events_and_promotions'),
-                    name: 'Events & Promotions'
-                },
-                {
-                    path: ':id',
-                    component: view('promotion_details'),
-                    meta: {
-                        breadcrumb: 'Promotion Details',
-                    },
-                    name: 'promotionDetails',
-                    props: true
-                }
-            ]
-        },
-        {
             path: '/events-and-promotions',
             component: view('default'),
             meta: {
@@ -170,6 +86,24 @@ define([], function () {
                     path: '',
                     component: view('events_and_promotions'),
                     name: 'events_and_promotions'
+                },
+                {
+                    path: '/events/:id',
+                    component: view('event_details'),
+                    meta: {
+                        breadcrumb: 'Event Details',
+                    },
+                    name: 'eventDetails',
+                    props: true
+                },
+                {
+                    path: '/promotions/:id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
+                    props: true
                 }
             ]
         },
@@ -253,52 +187,6 @@ define([], function () {
                 },
             ]
         },
-        // {
-        //     path: '/posts',
-        //     component: view('default'),
-        //     meta: {
-        //         breadcrumb: 'Blog',
-        //     },
-        //     children: [
-        //         {
-        //             path: '',
-        //             component: view('posts'),
-        //             name: 'posts'
-        //         },
-        //         {
-        //             path: ':id',
-        //             component: view('posts_details'),
-        //             meta: {
-        //                 breadcrumb: 'Blog Details',
-        //             },
-        //             name: 'postsDetails',
-        //             props: true
-        //         }
-        //     ]
-        // },
-        // {
-        //     path: '/jobs',
-        //     component: view('default'),
-        //     meta: {
-        //         breadcrumb: 'Jobs',
-        //     },
-        //     children: [
-        //         {
-        //             path: '',
-        //             component: view('jobs'),
-        //             name: 'jobs'
-        //         },
-        //         {
-        //             path: ':id',
-        //             component: view('job_details'),
-        //             meta: {
-        //                 breadcrumb: 'Job Details',
-        //             },
-        //             name: 'jobsDetails',
-        //             props: true
-        //         }
-        //     ]
-        // },
         {
             path: '*',
             redirect: '/'
