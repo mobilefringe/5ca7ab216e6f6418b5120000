@@ -192,7 +192,6 @@
                     
                     subcategories = _.map(subcategories, 'name').sort();
                     subcategories.unshift('All Cuisine');
-                    console.log(subcategories)
                     return subcategories;
                 },
                 filterByCategory() {
