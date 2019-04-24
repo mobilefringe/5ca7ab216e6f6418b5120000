@@ -222,17 +222,13 @@
                     this.currentStore = this.findStoreBySlug(id);
                     if (this.currentStore === null || this.currentStore === undefined) {
                         this.$router.replace({ name: 'stores' });
-                    }
-                    else {
+                    } else {
                         if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                             this.currentStore.no_logo = true
                         } else {
                             this.currentStore.no_logo = false
                         }
-                        // if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        //     this.currentStore.store_front_url_abs = this.property.default_logo;
-                        // }
-                        
+
                         var vm = this;
                         var storeHours = [];
                         _.forEach(this.currentStore.store_hours, function (value, key) {
@@ -272,18 +268,6 @@
                             temp_event.push(current_event);
                         }); 
                         this.storeEvents = temp_event;
-                        
-                        var vm = this;
-                        var temp_coupon = [];
-                        _.forEach(this.currentStore.coupons, function(value, key) {
-                            var current_coupon = vm.findCouponById(value);
-                            // if (_.includes(current_coupon.image_url, 'missing')) {
-                            //     current_coupon.image_url = "http://placehold.it/1560x800/757575";
-                            // }
-    
-                            temp_coupon.push(current_coupon);
-                        }); 
-                        // this.storeCoupons = temp_coupon;
                     }
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
                 },
