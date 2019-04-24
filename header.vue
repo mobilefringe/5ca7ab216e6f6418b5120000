@@ -33,7 +33,7 @@
     						    
     						    <li class="menu_item" v-if="!isTablet" v-for="item in menu_items" :id="item.id" @mouseleave="showDropDown = false" @mouseover="showDropDown = true">
     						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
-    						        <span @click="item.show_sub_menu = !item.show_sub_menu" v-if="item.sub_menu != undefined">{{ item.name }}</span>
+    						        <span v-if="item.sub_menu != undefined">{{ item.name }}</span>
     						        <ul v-if="!isTablet && item.sub_menu">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">{{ sub_menu.name }}</router-link>
@@ -190,11 +190,6 @@
                         this.search = ""
                     });
                     this.$router.push("/stores/" + option.slug);
-                },
-                menuClick: function() {
-                    this.$nextTick(function() {
-                        this.showDropDown = !this.showDropDown;
-                    });
                 }
             },
             beforeDestroy: function() {
