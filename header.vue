@@ -190,6 +190,11 @@
                         this.search = ""
                     });
                     this.$router.push("/stores/" + option.slug);
+                },
+                menuClick: function() {
+                    this.$nextTick(function() {
+                        this.showDropDown = !this.showDropDown;
+                    });
                 }
             },
             beforeDestroy: function() {
