@@ -16,12 +16,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="leasing_main" v-if="main" v-html="main.body"></div>
+                            <div class="leasing_main page_body" v-if="main" v-html="main.body"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="leasing_contact" v-if="leasingInfo" v-html="leasingInfo.body"></div>
+                            <div class="leasing_contact page_body" v-if="leasingInfo" v-html="leasingInfo.body"></div>
                         </div>
                     </div>
                 </div>
