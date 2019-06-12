@@ -695,7 +695,7 @@ input[type="search"] {
 .inside_page_header {
     margin-bottom: 24px;
     height: 282px;
-    background: #000;
+    background-color: #000;
     background: url('//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/jpeg/1529532304000/insidebanner2.jpg');
     background-position: center top;
     background-repeat: no-repeat;
