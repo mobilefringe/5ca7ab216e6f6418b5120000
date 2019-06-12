@@ -34,7 +34,7 @@
                 </div>
                 <messages-component></messages-component>
                 <div class="main_container">
-                    <h2 class="home_title center">Events & Promotions</h2>
+                    <h2 class="home_title center" v-if="featuredItems && featuredItems.length > 0">Events & Promotions</h2>
                     <div class="row margin_40 home_events">
                         <div class="col-sm-4" v-if="featuredItems" v-for="item in featuredItems">
                     	    <div v-if="item.eventable_type" class="feature_item_container">
