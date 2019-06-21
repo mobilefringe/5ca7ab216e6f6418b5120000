@@ -62,6 +62,7 @@
             created() {
                 this.loadData().then(response => {
                     var repo = this.findRepoByName('Location Banner');
+                    console.log(repo, "repo")
                     if(repo !== null && repo !== undefined) {
                        repo = repo.images;
                        this.pageBanner = repo[0];
