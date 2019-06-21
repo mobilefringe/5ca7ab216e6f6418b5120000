@@ -30,9 +30,9 @@
                         <div class="col-md-6" v-if="address">
                             <div v-html="address.body"></div>
                         </div>
-                        <div class="col-md-6" v-if="office">
-                            <div v-html="office.body"></div>
-                        </div>
+                        <!--<div class="col-md-6" v-if="office">-->
+                        <!--    <div v-html="office.body"></div>-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <div class="location_image_container">
@@ -80,7 +80,7 @@
                         this.main = response[1].data;
                         if(response[1].data && response[1].data.subpages){
                            this.address = response[1].data.subpages[0];
-                           this.office = response[1].data.subpages[1]
+                        //   this.office = response[1].data.subpages[1]
                         }
                     }
                     this.dataLoaded = true;
