@@ -203,7 +203,7 @@
                     //         }
                     //     }
                     // });
-                    var temp_image_url = ["//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg", "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg"]
+                    var temp_image_url = ["//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg", "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/jpeg/1561048932000/prtc_home_1925x470.jpg"]
                     var temp_name = ["Treat Yourself.","HUNGRY? "]
                     var temp_desc = ["You deserve it.", "We know just the place..."]
                     var temp_url = ["/stores", "/dine"]
