@@ -105,8 +105,7 @@
                 }
             },
             created() {
-                this.loadData().then(response => {
-                      console.log(response)
+                this.loadData().then(response => { 
                     var temp_repo = this.findRepoByName('Contact Us Banner');
                     if(temp_repo !== null && temp_repo !== undefined) {
                       temp_repo = temp_repo.images;
