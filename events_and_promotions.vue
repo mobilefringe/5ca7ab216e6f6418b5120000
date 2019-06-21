@@ -113,14 +113,14 @@
             },
             created (){
                 this.loadData().then(response => {
-                    // var temp_repo = this.findRepoByName('Events Banner').images;
-                    // if(temp_repo != null) {
-                    //     this.pageBanner = temp_repo[0];
-                    // } else {
+                    var temp_repo = this.findRepoByName('Events Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995355000/picorivera_banner.png"
                         }
-                    // }
+                    }
 
                     if (_.isEmpty(this.eventList)) {
                         this.toggleEvents = false;
