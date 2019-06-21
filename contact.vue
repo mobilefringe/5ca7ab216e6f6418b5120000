@@ -22,7 +22,7 @@
                     </div>
                     <div class="row" id="contact_us_container">
                         <div class="col-md-4">
-                            <div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    
+                            <!--<div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    -->
                         </div>
                         <div class="col-md-8">
                             <transition name="fadeIn">
