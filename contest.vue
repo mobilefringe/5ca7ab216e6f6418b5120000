@@ -3,7 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_page_header">
+                <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ background: 'linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  #753241 url(' + pageBanner.image_url + ') center center' }">
                     <div class="main_container position_relative">
                         <h2>Contest</h2>
                     </div>
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-8 col-md-offset-2 text-center">
                             <img v-if="currentContest.image_url" class="img_max" :src="currentContest.image_url" :alt="currentContest.name">
                         </div>
                     </div> 
@@ -90,12 +90,12 @@
 <script>
     define(["Vue", "vuex", "jquery", "axios", "vee-validate"], function(Vue, Vuex, $, axios, VeeValidate) {
         Vue.use(VeeValidate);
-        // console.log(VueScrollTo)
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
                     dataLoaded: false,
+                    pageBanner: null,
                     form_data: {},
                     formSuccess: false,
                     formError: false,
@@ -106,6 +106,18 @@
                 }
             },
             created() {
+                this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Contest Banner');
+                    if(temp_repo !== null && temp_repo !== undefined) {
+                       temp_repo = temp_repo.images;
+                       this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca3d0086e6f64397a070000/image/png/1554995151000/plazapaseo_banner.png"
+                        }
+                    }
+                });
+                
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('pico-contest--2');
                     this.dataLoaded = true;
@@ -127,11 +139,21 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'findRepoByName',
                     'findContestBySlug',
                     'findContestByShowOnSlug'
                 ]),
             },
             methods: {
+                loadData: async function () {
+                    try {
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "repos")
+                        ]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
                         if (result) {
