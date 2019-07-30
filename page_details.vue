@@ -67,7 +67,7 @@
                     this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
                         _this.currentPage = response.data;
                         if (_this.currentPage.title = "Thank You") {
-                            _this.currentPage.title = "Newsletter"
+                            _this.currentPage.title = "Privacy Policy"
                         }
                         _this.$breadcrumbs[0].meta.breadcrumb = _this.currentPage.title
                         _this.dataLoaded = true;
