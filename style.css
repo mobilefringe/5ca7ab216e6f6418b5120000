@@ -1893,6 +1893,19 @@ $anim-speed: 0.3s;
     #header {
         padding: 31px 0 46px 0;
     }
+    #header .main_container .col-md-12 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    #header .social_icon_container {
+        display: none;
+    }
     #header .site_logo {
         max-width: 200px;
         padding-bottom: 0;
