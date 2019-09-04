@@ -1514,7 +1514,6 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }
@@ -1539,7 +1538,6 @@ $anim-speed: 0.3s;
                 height: 30px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
@@ -1578,7 +1576,6 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
@@ -1655,7 +1652,7 @@ $anim-speed: 0.3s;
         .store_tag_text {
             padding: 4px 0;
             width: 108px;
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             color: #fff;
             line-height: normal;
             letter-spacing: 0.6px;
@@ -1806,7 +1803,6 @@ $anim-speed: 0.3s;
     margin-bottom: 20px;
     padding: 0;
     list-style-type: none;
-    font-size: 1.083rem;
     line-height: normal;
     li {
         margin-bottom: 20px;
@@ -1824,7 +1820,7 @@ $anim-speed: 0.3s;
         float: right;
     }
     .hours_vary {
-        font-size: 0.916rem;
+        font-size: 0.875rem;
         color: #000;
     }
 }
