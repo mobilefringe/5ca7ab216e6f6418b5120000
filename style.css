@@ -312,9 +312,10 @@ input[type="search"] {
     	position: relative;
         .menu_item {
             margin: 0;
-        	padding: 6px 0 24px 0;
+        // 	padding: 6px 0 24px 0;
+            padding: 6px 60px 24px 0;
             // min-width: 156px;
-            margin: auto 20px;
+            // margin: auto 20px;
             display: inline-block;
             position: relative;
         	font-size: 0.875rem;
