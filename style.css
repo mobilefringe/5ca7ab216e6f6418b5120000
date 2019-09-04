@@ -210,7 +210,6 @@ input[type="search"] {
     height: 4em;
 }
 .loader {
-    // margin: 88px auto;
     min-height: 60px;
     position: relative;
     -webkit-transform: translateZ(0);
@@ -312,10 +311,7 @@ input[type="search"] {
     	position: relative;
         .menu_item {
             margin: 0;
-        // 	padding: 6px 0 24px 0;
             padding: 6px 60px 24px 0;
-            // min-width: 156px;
-            // margin: auto 20px;
             display: inline-block;
             position: relative;
         	font-size: 0.875rem;
@@ -434,7 +430,6 @@ input[type="search"] {
     }
     .footer_content {
         padding: 48px 0;
-        // font-size: 0.9375rem;
         line-height: 1.25rem;
         text-align: center;
         .social_icon {
@@ -1169,8 +1164,6 @@ $anim-speed: 0.3s;
 }
 .event_desc {
     margin-bottom: 12px;
-    // font-size: 0.8rem;
-    // line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -2023,7 +2016,6 @@ $anim-speed: 0.3s;
         }
     }
     #mobile_nav ul .menu_item {
-        // padding: 12px 0;
         display: block;
         font-size: 1.25rem;
         text-align: center;
@@ -2064,35 +2056,7 @@ $anim-speed: 0.3s;
             color: #FFF;
         }
     }
-    // .mobile_nav_content {
-    //     display: -webkit-box;
-    //     display: -webkit-flex;
-    //     display: -ms-flexbox;
-    //     display: flex;
-    //     -webkit-box-orient: vertical;
-    //     -webkit-box-direction: normal;
-    //     -webkit-flex-direction: column;
-    //     -ms-flex-direction: column;
-    //     flex-direction: column;
-    //     -webkit-box-align: center;
-    //     -webkit-align-items: center;
-    //     -ms-flex-align: center;
-    //     align-items: center;
-    //     .header_social {
-    //         margin: 30px 0;
-    //         .social_icon {
-    //             div {
-    //                 border: 1px solid #000;    
-    //             }
-    //             .fab {
-    //                 color: $primary;
-    //             }
-    //         }
-    //     }
-    //     .mobile_property_address.center {
-    //         text-align: center;
-    //     }
-    // }
+
     /* *** FOOTER *** */
     #footer .newsletter_signup {
         text-align: center;
