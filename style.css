@@ -359,7 +359,7 @@ input[type="search"] {
     background-color: #555;
     color: #FFF;
     .newsletter_signup {
-        padding: 28px 0 32px 0;
+        // padding: 28px 0 32px 0;
         background-color: $primary;
         font-size: 1rem;
         line-height: 1rem;
