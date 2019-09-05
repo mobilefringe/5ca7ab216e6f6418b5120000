@@ -338,7 +338,7 @@ input[type="search"] {
                 line-height: normal;
                 color: #FFF;
                 a:hover {
-                    // color: $secondary;
+                    color: inherit;
                 }
             	&:hover, &:active, &:focus, &:visited {
             	   // background: $primary;
