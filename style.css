@@ -345,7 +345,7 @@ input[type="search"] {
             	   // background: $primary;
             	   // color: $secondary;
             	   background: $secondary;
-            	   color: $primary;
+            	   color: $000;
             	}
             }
         }
