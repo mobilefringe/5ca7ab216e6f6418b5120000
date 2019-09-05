@@ -1391,8 +1391,10 @@ $anim-speed: 0.3s;
         padding: 3px 0 3px 5px ;
         transition: all 0.3s ease;
         &:hover {
-            font-weight: 500;
-            color: $primary;
+            // font-weight: 500;
+            // color: $primary;
+            background: $primary;
+            color: $secondary;
             cursor:pointer;
         }
     }
