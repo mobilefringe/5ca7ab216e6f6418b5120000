@@ -338,12 +338,14 @@ input[type="search"] {
                 line-height: normal;
                 color: #FFF;
                 a:hover {
-                    color: inherit;
+                    // color: $secondary;
+                    color: $primary;
                 }
             	&:hover, &:active, &:focus, &:visited {
             	   // background: $primary;
             	   // color: $secondary;
             	   background: $secondary;
+            	   color: $primary;
             	}
             }
         }
