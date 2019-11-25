@@ -102,8 +102,7 @@
                     noScroll: false,
                     windowWidth: 0,
                     scrollY: false,
-                    siteInfo: site,
-                    isTablet: false
+                    siteInfo: site
                 }
             },
             props:['menu_items', 'social_media'],
@@ -121,13 +120,6 @@
                         document.body.classList.add("no_scroll");
                     } else if (this.showMenu == false) {
                         document.body.classList.remove("no_scroll");
-                    }
-                },
-                windowWidth: function() {
-                    if (this.windowWidth <= 1024 && this.windowWidth >= 768) {
-                        this.isTablet = true;
-                    } else {
-                        this.isTablet = false;
                     }
                 }
             },
