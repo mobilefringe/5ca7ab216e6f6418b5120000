@@ -1439,8 +1439,8 @@ input[type=search] {
         padding: 3px 0 3px 5px ;
         transition: all 0.3s ease;
         &:hover {
-            background: $secondary;
-            color: #000;
+            background: $primary;
+            color: $secondary;
             cursor:pointer;
         }
     }
