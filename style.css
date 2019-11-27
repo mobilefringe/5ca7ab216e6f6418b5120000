@@ -695,6 +695,7 @@ input[type="search"] {
             background-position: center center;
         }
         .insta_content {
+            background: $primary;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
@@ -705,7 +706,7 @@ input[type="search"] {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                background: $primary;
+                
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
