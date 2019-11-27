@@ -77,7 +77,7 @@
                                 <div class="row margin_40">
                                     <div class="col-md-6" v-if="storePromotions" v-for="item in storePromotions">
                                         <div class="feature_item_container">
-                                	        <router-link class="tile" :to="{ name: 'promoDetails', params: { id: item.slug }}">
+                                	        <router-link class="tile" :to="{ name: 'promotionDetails', params: { id: item.slug }}">
                                     			<img :src="item.image_url" :alt="item.name">
                                 				<div class="details">
                         					    	<span class="title">
