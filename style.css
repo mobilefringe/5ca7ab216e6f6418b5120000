@@ -399,7 +399,7 @@ input[type="search"] {
             padding: 0 10px;
             min-width: 206px;
             height: 34px;
-            border: 1px solid $secondary;
+            border: none;
             box-shadow: none;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.8125rem;
