@@ -739,8 +739,8 @@ input[type="search"] {
                 visibility: visible;
                 position: absolute;
                 top: 0;
-                // background: rgba(0,0,0,0.5);
-                background: $primary;
+                // background: $primary;
+                background: $secondary;
             }    
         }
     }
