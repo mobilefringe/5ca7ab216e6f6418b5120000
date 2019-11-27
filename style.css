@@ -739,7 +739,6 @@ input[type="search"] {
                 visibility: visible;
                 position: absolute;
                 top: 0;
-                // background: $primary;
                 background: $secondary;
             }    
         }
@@ -921,7 +920,7 @@ $anim-speed: 0.3s;
 	text-align: left;
 	&:before {
 		content: '';
-        background: $primary;
+        background: $secondary;
 		width: 100%;
 		height: 100%;
 		opacity: 0;
