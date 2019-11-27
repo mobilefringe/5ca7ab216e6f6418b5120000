@@ -17,7 +17,6 @@
 
 /* *** COLOURS *** */
 $primary: #3B7090; 
-// $primary: #697a3c;
 $secondary: #c3d346;
 $text: #000;
 
@@ -1754,7 +1753,6 @@ input[type=search] {
         width: 100%;
         height: 100%;
         display: none;
-        // background-color: rgba(25, 85, 115, 0.8);
         background: $primary;
         transition: all 0.3s ease;
     }
