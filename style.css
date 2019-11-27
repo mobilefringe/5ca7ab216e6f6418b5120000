@@ -1177,6 +1177,7 @@ $anim-speed: 0.3s;
     font-weight: 700;
     font-size: 1.583rem;
     line-height: normal;
+    letter-spacing: 0;
 }
 .event_container {
     margin-bottom: 75px;
