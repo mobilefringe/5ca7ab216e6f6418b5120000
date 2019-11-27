@@ -1935,6 +1935,11 @@ input[type=search] {
 }
 
 @media(max-width: 768px){
+    #store_dets_logo_container {
+        display: flex;
+        justify-content: center;
+    }
+    
     .hidden_phone {
         display: none;
     }
