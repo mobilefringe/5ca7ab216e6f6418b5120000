@@ -399,7 +399,7 @@ input[type="search"] {
             padding: 0 10px;
             min-width: 206px;
             height: 34px;
-            border: none;
+            border: 1px solid $secondary;
             box-shadow: none;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.8125rem;
@@ -695,7 +695,6 @@ input[type="search"] {
             background-position: center center;
         }
         .insta_content {
-            background: $primary;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
@@ -706,13 +705,12 @@ input[type="search"] {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
                 font-size: 0.875rem;
                 line-height: normal;
-                color: #fff;
+                color: #FFF;
                 text-align: center;
             }
             .insta_user {
@@ -722,7 +720,7 @@ input[type="search"] {
                 left: 10px;
                 font-size: 0.875rem;
                 line-height: normal;
-                color: #fff;
+                color: #FFF;
             }
             .insta_icon {
                 position: absolute;
@@ -730,7 +728,7 @@ input[type="search"] {
                 bottom: 10px;
                 font-size: 1.038rem;
                 line-height: normal;
-                color: #fff;
+                color: #FFF;
             }
         }
         a:hover {
