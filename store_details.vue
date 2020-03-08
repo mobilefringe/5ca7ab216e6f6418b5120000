@@ -279,6 +279,7 @@
                             if (_.includes(subcategories, 8888)) {
                                 this.hasPostmates = true;   
                             }
+                            // not avail for this property but add back in and change ID if it is added in future 
                             // if (_.includes(subcategories, 8244)) {
                             //     this.hasRestaurantDelivery = true;   
                             // }
