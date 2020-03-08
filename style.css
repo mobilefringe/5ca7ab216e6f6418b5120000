@@ -357,8 +357,10 @@ input[type="search"] {
             	    margin: 0;
             	    color: #fff;
             	}
-                a:hover {
-                    color: #000;
+                a {
+                    &:focus {
+                        color: #fff;
+                    }
                 }
             }
         }
