@@ -1603,7 +1603,7 @@ input[type=search] {
 }
 .store_category {
     margin-right: 30px;
-    width: 208px;
+    max-width: 208px;
     height: 35px;
     position: relative;
     float: right;
@@ -1662,7 +1662,7 @@ input[type=search] {
         }  
         li > a {
             padding: 8px 10px;
-            width: 208px;
+            max-width: 208px;
             white-space: normal;
             line-height: normal;
         }
