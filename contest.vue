@@ -120,7 +120,11 @@
                 
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('pico-contest--2');
-                    this.dataLoaded = true;
+                    if (this.currentContest) {
+                        this.dataLoaded = true;
+                    } else {
+                        this.$router.replace({ path: '/' });
+                    }
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
