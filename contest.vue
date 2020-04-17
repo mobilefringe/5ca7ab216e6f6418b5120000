@@ -113,7 +113,7 @@
                        this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca3d0086e6f64397a070000/image/png/1554995151000/plazapaseo_banner.png"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5dddc9b76e6f642ebd020000/image/png/1554995355000/picorivera_banner.png"
                         }
                     }
                 });
