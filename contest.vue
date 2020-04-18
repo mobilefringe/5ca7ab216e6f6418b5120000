@@ -134,7 +134,7 @@
                 }); 
                 
                 this.$store.dispatch("getData", "contests").then(response => {
-                    this.currentContest = this.findContestByShowOnSlug('longbeach-contest');
+                    this.currentContest = this.findContestByShowOnSlug('pico-contest--2');
                     if (this.currentContest) {
                         this.dataLoaded = true;
                     } else {
